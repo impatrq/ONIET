@@ -1,3 +1,7 @@
+#
+# GitHub: AlejandroMendez7
+#
+
 inp = int(input("Ingrese un valor = "))                     # Input como int
 total = 0                                                   # Defino una variable 
 tup = (50, 20, 10, 5, 1)                                    # Tuple con los billetes
