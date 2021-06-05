@@ -9,7 +9,7 @@ Diseñar un algoritmo que cifre y descifre un texto almacenado en un `.txt`. El 
   -  La key.
   -  Y por último, el nombre del archivo a modificar.
 - El archivo `.txt` se encontrá en la carpeta `data/`, y ahí estará el mensaje a modificar.
-- Una vez modificado el texto, deberá guardarse en un archivo nuevo nombrado con el nombre del archivo anterior agragando un `-Cifrado` o un `-Desifrado` dependiendo el caso.
+- Una vez modificado el texto, deberá guardarse en un archivo nuevo nombrado con el nombre del archivo anterior agragando un `-Cifrado` o un `-Descifrado` dependiendo el caso.
 - Imprimir un mensaje de confirmación.
 
 Los archivos estarán guardados de la siguente manera:
@@ -62,7 +62,7 @@ Los archivos estarán guardados de la siguente manera:
 ```text
     $ python cifrado.py tykhñrjofxgswnabzcvudmlpeiq -d texto.txt
     
-    Mensaje desifrado correctamente.
+    Mensaje descifrado correctamente.
 ```
 ## Test
 Para testear usarán el programa siguiente para generar keys válidas y observar que cifre y descifre correctamente (Deberán validar por su cuenta keys inválidas). Lo copian en un archivo llamado `key_generator.py` y lo ejecuntan cada vez que lo necesiten :wink::
