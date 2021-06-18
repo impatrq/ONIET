@@ -14,7 +14,7 @@ Un **palíndromo** es una palabra o expresión que es igual si se lee de izquier
  - Rallar
  - Sobreverbos
  - Somos
- - Aman a Panamá
+ - Aman a Panama
  - Amor a Roma
  - Ana lava lana
  - A mama Roma le aviva el amor a papa y a papa Roma le aviva el amor a mama
