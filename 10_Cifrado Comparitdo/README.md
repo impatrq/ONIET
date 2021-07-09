@@ -17,6 +17,10 @@ El programa debe importar esta nueva clase y usar sus funciones.
 - Cuando el programa descifre debe ir a buscar los parámetros mencionados anteriormente.
 - En ambos casos crear un nuevo archivo con el contenido obtenido. El formato del nombre debe ser de la siguiente manera: `$NOMBRE_ANTERIOR-C` (`-D` en el caso de Descifrar)
 
+## Bonus 	:star:
+> ***Aclaración**: Los ejercios base, poseen todos los contenidos necesarios para competir. Los bonus son solo para los que quieran praticar más.*
+
+El programa debe tomar, de un archivo llamado `keys.txt`, las keys a utilizar en caso de que exista. Si la cantidad de keys pedida es mayor a las que se encuentran en el archivo, deberá generar las restantes. El programa **NO** debe modificar ese archivo.
 ## Consideraciones
 
 Para que la resolución forme parte del repositorio:   
