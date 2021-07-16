@@ -2,7 +2,7 @@
 
 ## Consigna
 
-Utilizando la api de  [Covid-19 API](https://https://covid19api.com/), diseñar un algoritmo que muestre las estadísticas sobre los casos de Covid-19, tanto a nivel mundial, como a nivel regional.
+Utilizando la api de  [Covid-19 API](https://covid19api.com/), diseñar un algoritmo que muestre las estadísticas sobre los casos de Covid-19, tanto a nivel mundial, como a nivel regional.
 
 El programa debe:
   - Poseer un **menú por consola**.
