@@ -20,15 +20,10 @@ El menú por consola se debe ver de la siguiente manera:
   [5]. Salir.
 ```
 
-## Aclaraciones
-
-- Al iniciar por primera vez, se debe pedir una región.
-- El programa debe guardar la región selecionada.
-
 ## Bonus 	:star:
 > ***Aclaración**: Los ejercios base, poseen todos los contenidos necesarios para competir. Los bonus son solo para los que quieran praticar más.*
 
-El programa debe poseer un login **super básico** para poder usarlo. (Cuando se inicia por primera vez registrar al usuario con user, pass y región). Además, agregar la opción de poder ver un Top de los 10 peores paises (Por cantidad de casos o muertes, a su elección :skull_and_crossbones:).
+El programa debe poseer un login **super básico** para poder usarlo. Además, agregar la opción de poder ver un Top de los 10 peores paises (Por cantidad de casos o muertes, a su elección :skull_and_crossbones:).
 
 ## Consideraciones
 
