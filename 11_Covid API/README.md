@@ -19,6 +19,10 @@ El menú por consola se debe ver de la siguiente manera:
   [4]. Cambiar Región.
   [5]. Salir.
 ```
+## Aclaraciones
+
+- Al iniciar por primera vez, se debe pedir una región.
+- El programa debe guardar la región selecionada.
 
 ## Bonus 	:star:
 > ***Aclaración**: Los ejercios base, poseen todos los contenidos necesarios para competir. Los bonus son solo para los que quieran praticar más.*
