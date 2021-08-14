@@ -20,7 +20,7 @@ Si bien hay una gran variedad de lenguajes y tecnologías para elegir, nuestro l
 
 Aprovechando que durante gran parte del año estuvimos aprendiendo Python, para esta competencia vamos a utilizarlo junto a un Framework llamado Django.
 
-#### ¿Qué es un framework?
+### ¿Qué es un framework?
 
 Según [www.seoestudios.es](https://www.seoestudios.es/blog/que-es-un-framework/#:~:text=Un%20framework%20es%20un%20entorno,un%20producto%20de%20mayor%20calidad.), un framework es un entorno de trabajo que tiene como objetivo facilitar la labor de programación ofreciendo una serie de características y funciones que aceleran el proceso, reducen los errores, favorecen el trabajo colaborativo y consiguen obtener un producto de mayor calidad.
 
@@ -32,7 +32,7 @@ Ahora, en criollo, es como una caja de herramientas para un lenguaje de programa
 
 Como uno de los requisitos de la competencia es que se resuelva el problema mediante un Sistema Web, el Framework que combina Python y Desarrollo Web es Django.
 
-#### ¿Qué es Django?
+### ¿Qué es Django?
 
 Django es un framework web escrito en Python que ofrece una gran variedad de componentes y servicios listos para utilizar en nuestro sistema.
 
@@ -45,7 +45,7 @@ Algunos ejemplos de los servicios y características más útiles que ofrece Dja
 
 Con Django vamos a ser capaces de migrar todo este conocimiento sobre resolución de problemas y bases de datos al ámbito web con muchos más componentes para enriquecer nuestro programa (ahora llamado 'sistema web').
 
-#### Por último, ¿Que es ORM?
+### Por último, ¿Que es ORM?
 
 ORM es un modelo de programación que permite mapear las estructuras de una base de datos relacional sobre una estructura lógica de entidades con el objeto de simplificar y acelerar el desarrollo de nuestras aplicaciones.
 
