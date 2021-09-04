@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+
+{% block titulo %}
+    Titulo Nuevo
+{% endblock titulo %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="custom_style.css">
+{% endblock css %}
+    
+    
+
+{% block contenido %}
+    <h1>Hola</h1>
+
+    <h2>Nombre: {{ nombre }} </h2>
+    <h2>Apellido: {{ apellido }} </h2>
+
+    <ol>
+        {% for elemento in numeros %}
+            <li>{{ elemento }}</li>
+        {% endfor %}
+    </ol>
+
+
+    {% if nombre == 'Juan' %}
+        <h1>Tu nombre es Juan</h1>
+    {% else %}
+        <h1>Tu nombre no es Juan</h1>
+    {% endif %}
+{% endblock contenido %}

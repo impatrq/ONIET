@@ -174,3 +174,105 @@ En el template:
 ```
 
 Es importante que no se olviden de cargar los archivos estáticos con la etiqueta `{% load static %}`.
+
+---
+
+### Información sobre cómo pasar datos en URL's
+
+[Documentación Oficial](https://docs.djangoproject.com/en/3.2/topics/http/urls/).
+
+#### URL's Dinámicas
+
+Para utilizar estas url's dinámicas, se debe definir en el `path` de nuestro archivo `urls.py` que se recibirá un dato y su tipo de dato.
+
+Ejemplo:
+
+urls.py
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('<str:pais>', views.index),
+]
+```
+
+Acá definimos que nos llegará una variable de tipo String (str) y tomará el nombre `pais` para luego ser usada en nuestra función cómo parámetro. Si nuestra intención es mandar un `int` debemos: `<int:numero>`
+
+views.py
+```python
+def index(request, pais):
+
+    // Realizar peticion y devolver datos en un HTML.
+
+```
+
+Cabe recalcar que el nombre del parámetro que nos llega a la función debe ser igual al nombre que establecimos anteriormente en el `path`.
+
+La URL tendrá este formato: http://localhost:8000/argentina
+
+El String 'argentina' que pasamos en la URL será el valor de la variable `pais` en nuestra función `index`.
+
+#### Parámetros GET en la URL
+
+Cuando queremos pasar parámetros en la URL y no usar url's dinámicas, podemos hacer uso de los parámetros de la petición GET.
+
+Ejemplo:
+
+http://localhost:8000/?nombre=Lautaro
+
+Usando los parámetros de la petición GET en el navegador, no hace falta configurar nada en nuestros `path`.
+
+urls.py
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index),
+]
+```
+
+views.py
+```python
+def index(request):
+
+    nombre = request.GET.get('nombre', '')
+
+    print(f'Resultado: {nombre}')
+    // Resultado: Lautaro
+
+```
+
+En nuestro objeto `request` tenemos un diccionario llamado `GET` que contiene la información de los parámetros que pasamos a través de la URL. Con la función `.get()` obtenemos un valor del diccionario.
+
+`request.GET.get(clave, default)`
+
+En la función `.get` debemos pasar como primer argumento la clave que queremos acceder, en este caso, 'nombre'. El segundo parámetro es el valor que tomará nuestra variable en caso de que la clave del primer parámetro no se encuentre en el diccionario.
+
+Tengan presente que la función `.get` se está aplicando a un diccionario de Python (`request.GET`).
+
+---
+
+# Consigna
+
+Realizar un sistema web que proporcione datos del Covid-19 utilizando la API [Covid19](https://documenter.getpostman.com/view/10808728/SzS8rjbc). El sistema deberá proporcionar datos del país indicado en la URL.
+
+### Funcionamiento
+
+- Al ingresar a http://localhost:8000/argentina o http://localhost:8000/?pais=argentina deberá mostrar en pantalla los datos de los contagiados, muertos y recuperados (totales y nuevos).
+- La URL debe ser variable, el sistema debe identificar que parametro se le está pasando, por lo tanto, las url's posibles son tantas como paises tenga la API. 
+
+Ejemplo:
+
+- http://localhost:8000/argentina o http://localhost:8000/?pais=argentina
+- http://localhost:8000/bolivia o http://localhost:8000/?pais=bolivia
+- http://localhost:8000/uruguay o http://localhost:8000/?pais=uruguay
+- http://localhost:8000/peru o http://localhost:8000/?pais=peru
+- http://localhost:8000/afghanistan o http://localhost:8000/?pais=afghanistan
+- http://localhost:8000/chile o http://localhost:8000/?pais=chile
+- etc...
+
+### Aclaración: 
+
+No deben crear urls por cada país a mano, estas deben recibir datos para ser utilizados en Python.
