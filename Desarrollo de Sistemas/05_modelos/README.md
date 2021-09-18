@@ -35,3 +35,8 @@ Documentación extra:
 - https://asociacionaepi.es/los-modelos-de-django/
 - https://medium.com/@devsar/modelos-en-django-381530c5fc3c
 - https://docs.djangoproject.com/en/3.2/ref/models/querysets/
+
+# Lectura, Creación y Filtrado de Modelos
+
+- https://tutorial.djangogirls.org/es/django_orm/
+- https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Models
