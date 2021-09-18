@@ -34,3 +34,4 @@ Documentación extra:
 - https://www.youtube.com/watch?v=HDz6lqZ91rE
 - https://asociacionaepi.es/los-modelos-de-django/
 - https://medium.com/@devsar/modelos-en-django-381530c5fc3c
+- https://docs.djangoproject.com/en/3.2/ref/models/querysets/
