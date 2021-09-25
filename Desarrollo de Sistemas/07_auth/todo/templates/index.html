@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    
+    <h1>ToDo</h1>
+
+    <form action="/add/" method="POST">
+        {% csrf_token %}
+        <input type="text" name="task">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <br>
+
+    
+
+    <ul>
+        {% for task in tasks %}
+            <li>
+                
+                <input type="checkbox" disabled {% if task.done == True %} checked {% endif %}>
+                
+                {% if task.done == True %}
+                
+                    <strike> {{ task }} </strike>
+                
+                {% else %}
+                
+                    {{ task }} 
+                
+                {% endif %}
+                
+                <a href="/update/{{ task.id }}">X</a>
+
+            </li>
+        {% endfor %}
+    </ul>
+        
+</body>
+</html>
