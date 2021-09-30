@@ -11,3 +11,14 @@ Les dejo videos explicativos sobre el sistema de autenticación y referencias en
 - https://docs.djangoproject.com/en/3.2/topics/auth/
 - https://docs.djangoproject.com/en/3.2/topics/auth/default/
 - https://docs.djangoproject.com/en/3.2/topics/auth/passwords/
+
+# Ejercicio
+
+#### Realizar un sistema que le permita a los usuarios registrarse, iniciar y cerrar sesión además de poder tener un buscador para consultar datos del Covid 19 por país.
+
+##### Aclaraciones
+
+- La página del Login deberá tener una forma de direccionar al usuario a la página del Register y viceversa.
+- La página principal que contiene el buscador solo se podrá acceder si el usuario está logueado.
+- La página principal además deberá tener siempre un botón para cerrar sesión.
+- El buscador se deberá basar en un campo de texto donde el usuario ingresará un país y al apretar un botón se le mostrará una página con los resultados de la búsqueda (Nuevos y Totales: Contagiados, Fallecidos y Recuperados)
